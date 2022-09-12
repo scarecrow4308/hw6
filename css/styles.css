@@ -105,6 +105,14 @@ h3 {
   cursor: pointer;
 }
 
+.close-button-icon {
+  transition: fill var(--animation-duration-and-func);
+}
+
+.modal-close-button:hover .close-button-icon {
+  fill: var(--hover-blue-color);
+}
+
 .contacts-form {
   padding: 40px;
 }
@@ -183,6 +191,7 @@ h3 {
 
 .contacts-form-policy {
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-bottom: 30px;
   color: var(--dark-desc-color);
@@ -767,7 +776,7 @@ h3 {
 
 .page-footer > .container {
   display: flex;
-  gap: 70px;
+  justify-content: space-between;
 }
 
 .page-footer .link-list-item svg {
